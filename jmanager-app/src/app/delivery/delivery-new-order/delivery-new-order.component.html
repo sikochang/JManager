@@ -1,3 +1,35 @@
 <p>
   delivery-new-order works!
 </p>
+<!--<form [formGroup]="userform" (ngSubmit)="onSubmit(userform.value)">-->
+<form>
+  <p-panel>
+    <p-header>
+      金兆宏食品发货流程单
+    </p-header>
+    <p-fieldset legend="订单信息">
+      <b>电话号码：*</b>
+      <b>配送方式：*</b>
+      <p>收货人：*</p>
+      <p>收货人ID：*</p>
+      <p>收货地址：*</p>
+      <!--<p-checkbox [(ngModel)]="checked" binary="true"></p-checkbox>-->
+      <p-checkbox binary="true" label="是否需要填写付款人信息" ></p-checkbox>
+      <p>付款人：*</p>
+      <p>付款人电话：*</p>
+      <hr>
+      <b>接单人：</b>
+      <!--<p-dropdown [options]="cars" [(ngModel)]="selectedCar"  editable="true" placeholder="Select a Brand"></p-dropdown>-->
+      <p-dropdown  editable="true" placeholder="Select a Brand"></p-dropdown>
+      <b>接单时间：*</b>
+      <!--<p-calendar [(ngModel)]="date7" [showTime]="true"></p-calendar>-->
+      <p-calendar [showTime]="true" ></p-calendar>
+    </p-fieldset>
+    <p-fieldset legend="订货清单">
+      Content
+    </p-fieldset>
+    <p-footer>
+      Footer content here
+    </p-footer>
+  </p-panel>
+</form>
