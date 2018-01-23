@@ -1,6 +1,8 @@
 <p>
   delivery-board works!
   <p-button label="Click"></p-button>
+  <p-button label="Click" icon="fa" styleClass="ui-button-success"></p-button>
+  <!--<button nz-button [nzType]="'primary'">测试按钮</button>-->
 
 
 </p>
@@ -10,7 +12,7 @@
       <p-header>
       </p-header>
       点击下方蓝色按钮下单
-      <p-footer>
+      <p-footer >
         <a routerLink="/delivery/neworder">下单</a>
       </p-footer>
     </p-card>
@@ -18,33 +20,30 @@
   <div class="ui-g-12 ui-md-6 ui-lg-3">
     <p-card title="待打包订单" subtitle="此区域用于下单" styleClass="ui-card-shadow">
       <p-header>
-        <img src="Card" src="assets/showcase/images/usercard.png">
       </p-header>
       点击下方蓝色按钮下单
       <p-footer>
-        <a></a>
+        <a routerLink="/delivery/neworder">下单</a>
       </p-footer>
     </p-card>
   </div>
   <div class="ui-g-12 ui-md-6 ui-lg-3">
     <p-card title="待发货订单" subtitle="此区域用于下单" styleClass="ui-card-shadow">
       <p-header>
-        <img src="Card" src="assets/showcase/images/usercard.png">
       </p-header>
       点击下方蓝色按钮下单
       <p-footer>
-        <button pButton type="button" (click)="count()" label="Primary"></button>
+        <a routerLink="/delivery/neworder">下单</a>
       </p-footer>
     </p-card>
   </div>
   <div class="ui-g-12 ui-md-6 ui-lg-3">
     <p-card title="待归档订单" subtitle="此区域用于下单" styleClass="ui-card-shadow">
       <p-header>
-        <img src="Card" src="assets/showcase/images/usercard.png">
       </p-header>
       点击下方蓝色按钮下单
       <p-footer>
-        <button pButton type="button" (click)="count()" label="Primary"></button>
+        <a routerLink="/delivery/neworder">下单</a>
       </p-footer>
     </p-card>
   </div>
