@@ -12,6 +12,8 @@ import {ButtonModule} from 'primeng/button';
 import {CardModule} from 'primeng/card';
 import {FieldsetModule} from 'primeng/fieldset';
 import {PanelModule} from 'primeng/panel';
+import {MenubarModule} from 'primeng/menubar';
+import {MenuItem} from 'primeng/api';
 
 
 const deliveryRoutes: Routes = [
@@ -29,7 +31,8 @@ const deliveryRoutes: Routes = [
     ButtonModule,
     CardModule,
     FieldsetModule,
-    PanelModule
+    PanelModule,
+    MenubarModule
   ],
   declarations: [DeliveryBoardComponent, DeliveryNewOrderComponent]
 })

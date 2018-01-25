@@ -1,10 +1,10 @@
-<p>
-  delivery-board works!
-  <p-button label="Click"></p-button>
-  <p-button label="Click" icon="fa" styleClass="ui-button-success"></p-button>
 
+<p-menubar [model]="items" styleClass="ui-menuitem">
+  <div>
+    <button pButton label="Logout" icon="fa-sign-out"></button>
+  </div>
+</p-menubar>
 
-</p>
 <div class="ui-g">
   <div class="ui-g-12 ui-md-6 ui-lg-3">
     <p-card title="新建订单" styleClass="ui-card-shadow" [style]="{background: '#bbffff'}">
