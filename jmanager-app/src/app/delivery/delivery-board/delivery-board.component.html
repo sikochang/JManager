@@ -1,10 +1,13 @@
 
-<p-menubar [model]="items" styleClass="ui-menuitem">
-  <div>
-    <button pButton label="Logout" icon="fa-sign-out"></button>
+<div class="ui-g">
+  <div class="ui-g-12 ui-md-6 ui-lg-3">
+    <p-menubar [model]="items" styleClass="ui-menuitem">
+      <div>
+        <button pButton label="Logout" icon="fa-sign-out"></button>
+      </div>
+    </p-menubar>
   </div>
-</p-menubar>
-
+</div>
 <div class="ui-g">
   <div class="ui-g-12 ui-md-6 ui-lg-3">
     <p-card title="新建订单" styleClass="ui-card-shadow" [style]="{background: '#bbffff'}">

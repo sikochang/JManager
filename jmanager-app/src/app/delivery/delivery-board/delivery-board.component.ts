@@ -16,7 +16,7 @@ export class DeliveryBoardComponent implements OnInit {
 
   ngOnInit() {
     this.items = [
-      {label: 'Quit', icon: 'fa-minus'}
+      {label: '首页', icon: 'fa-home'}
     ];
     this.toBePackedOrderCounts = 2;
     this.toBeDeliveredOrderCounts = 3;
