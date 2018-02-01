@@ -9,6 +9,7 @@ import {DeliveryNewOrderComponent} from './delivery-new-order/delivery-new-order
 import {CalendarModule} from 'primeng/calendar';
 import {CheckboxModule} from 'primeng/checkbox';
 import {DropdownModule} from 'primeng/dropdown';
+import {SpinnerModule} from 'primeng/spinner';
 import {ButtonModule} from 'primeng/button';
 import {DataTableModule} from 'primeng/datatable';
 import {CardModule} from 'primeng/card';
@@ -31,6 +32,7 @@ const deliveryRoutes: Routes = [
     CalendarModule,
     CheckboxModule,
     DropdownModule,
+    SpinnerModule,
     ButtonModule,
     DataTableModule,
     CardModule,
