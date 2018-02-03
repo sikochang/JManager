@@ -2,7 +2,7 @@
   delivery-new-order works!
 </p>
 <!--<form [formGroup]="userform" (ngSubmit)="onSubmit(userform.value)">-->
-<form>
+<form (ngSubmit)="onSubmit()">
   <p-panel>
     <p-header>
       金兆宏食品发货流程单
@@ -50,16 +50,16 @@
             <p-spinner size="2" [min]="0" [max]="100"></p-spinner>
           </ng-template>
         </p-column>
-        <p-column header="操作">
+        <p-column header="操作"  [style]="{'width':'3.1em'}">
           <ng-template pTemplate="body">
-            <button pButton id="minus-button" icon="fa fa-fw fa-minus" class="ui-button-danger" [style]="{'width':'150px'}"></button>
-            <button pButton id="plus-button" (click)="addOrderItem()" icon="fa fa-fw fa-plus" class="ui-button-success"></button>
+            <button pButton icon="fa fa-fw fa-minus" class="ui-button-danger" style="height: 1.2em"></button>
+            <button pButton (click)="addOrderItem()" icon="fa fa-fw fa-plus" class="ui-button-success" style="height: 1.2em"></button>
           </ng-template>
         </p-column>
       </p-dataTable>
     </p-fieldset>
     <p-footer>
-      Footer content here
+      <button pButton type="submit" label="Submit"></button>
     </p-footer>
   </p-panel>
 </form>

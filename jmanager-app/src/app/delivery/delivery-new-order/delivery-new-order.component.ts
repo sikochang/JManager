@@ -23,4 +23,8 @@ export class DeliveryNewOrderComponent implements OnInit {
     this.orderItems.push(new OrderItem('', '', 1));
   }
 
+  onSubmit() {
+    console.log('submit');
+  }
+
 }
