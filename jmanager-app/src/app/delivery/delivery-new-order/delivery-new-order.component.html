@@ -8,19 +8,48 @@
       金兆宏食品发货流程单
     </p-header>
     <p-fieldset legend="订单信息">
-      <div class="ui-grid-row">
+      <div class="ui-grid-row" style="margin-bottom: 0.3em">
         <div class="ui-grid-col-4">
           <b>电话号码：*</b>
         </div>
         <div class="ui-grid-col-8">
-          <input pInputText type="text" placeholder="电话号码"/>
+          <input pInputText type="text" placeholder="填写电话号码" style="width: 100%"/>
+        </div>
+      </div>
+      <div class="ui-grid-row" style="margin-bottom: 0.3em">
+        <div class="ui-grid-col-4">
+          <b>配送方式：*</b>
+        </div>
+        <div class="ui-grid-col-8">
+          <p-dropdown editable="true" placeholder="填写配送方式" [style]="{'width': '100%'}"></p-dropdown>
+        </div>
+      </div>
+      <div class="ui-grid-row" style="margin-bottom: 0.3em">
+        <div class="ui-grid-col-4">
+          <b>收货人：*</b>
+        </div>
+        <div class="ui-grid-col-8">
+          <input pInputText type="text" placeholder="填写收货人姓名" style="width: 100%"/>
+        </div>
+      </div>
+      <div class="ui-grid-row" style="margin-bottom: 0.3em">
+        <div class="ui-grid-col-4">
+          <b>收货人ID：*</b>
+        </div>
+        <div class="ui-grid-col-8">
+          <input pInputText type="text" placeholder="填写收货人ID" style="width: 100%"/>
+        </div>
+      </div>
+      <div class="ui-grid-row" style="margin-bottom: 0.3em">
+        <div class="ui-grid-col-4">
+          收货地址：*
+        </div>
+        <div class="ui-grid-col-8">
+          <input pInputText type="text" placeholder="填写详细地址" style="width: 100%"/>
         </div>
       </div>
 
-      <b>配送方式：*</b>
-      <p>收货人：*</p>
-      <p>收货人ID：*</p>
-      <p>收货地址：*</p>
+
       <p-checkbox [(ngModel)]="isPayerNeeded" binary="true" label="是否需要填写付款人信息"
                   [ngModelOptions]="{standalone: true}"></p-checkbox>
       <div *ngIf="isPayerNeeded">
@@ -58,10 +87,12 @@
             <p-spinner size="2" [min]="0" [max]="100"></p-spinner>
           </ng-template>
         </p-column>
-        <p-column header="操作"  [style]="{'width':'3.1em'}">
+        <p-column header="操作" [style]="{'width':'3.1em'}">
           <ng-template pTemplate="body">
-            <button pButton type="button" icon="fa fa-fw fa-minus" class="ui-button-danger" style="height: 1.2em"></button>
-            <button pButton type="button" (click)="addOrderItem()" icon="fa fa-fw fa-plus" class="ui-button-success" style="height: 1.2em"></button>
+            <button pButton type="button" icon="fa fa-fw fa-minus" class="ui-button-danger"
+                    style="height: 1.2em"></button>
+            <button pButton type="button" (click)="addOrderItem()" icon="fa fa-fw fa-plus" class="ui-button-success"
+                    style="height: 1.2em"></button>
           </ng-template>
         </p-column>
       </p-dataTable>
