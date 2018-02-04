@@ -15,6 +15,7 @@ import { DeliveryClosingOrderComponent } from './delivery-closing-order/delivery
 import {CalendarModule} from 'primeng/calendar';
 import {CheckboxModule} from 'primeng/checkbox';
 import {DropdownModule} from 'primeng/dropdown';
+import {InputTextModule} from 'primeng/inputtext';
 import {SpinnerModule} from 'primeng/spinner';
 import {ButtonModule} from 'primeng/button';
 import {DataTableModule} from 'primeng/datatable';
@@ -41,6 +42,7 @@ const deliveryRoutes: Routes = [
     CalendarModule,
     CheckboxModule,
     DropdownModule,
+    InputTextModule,
     SpinnerModule,
     ButtonModule,
     DataTableModule,
