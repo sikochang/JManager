@@ -1,9 +1,9 @@
 
 <div class="ui-g">
-  <div class="ui-g-12 ui-md-6 ui-lg-3">
+  <div class="ui-g-12 ui-md-12 ui-lg-12">
     <p-menubar [model]="items" styleClass="ui-menuitem">
       <div>
-        <button pButton label="Logout" icon="fa-sign-out"></button>
+        <button pButton label="退出" icon="fa-sign-out"></button>
       </div>
     </p-menubar>
   </div>
@@ -18,20 +18,20 @@
   <div class="ui-g-12 ui-md-6 ui-lg-3">
     <p-card title="待打包出库订单" styleClass="ui-card-shadow" [style]="{background: '#ffb5c5'}">
       尚有{{toBePackedOrderCounts}}个订单待打包出库
-      <div class="board-card-button" routerLink="/delivery/neworder">查看订单|打包出库
+      <div class="board-card-button" routerLink="/delivery/packingorderlist">查看订单|打包出库
       </div>
     </p-card>
   </div>
   <div class="ui-g-12 ui-md-6 ui-lg-3">
     <p-card title="待发货订单" styleClass="ui-card-shadow" [style]="{background: '#ffe7ba'}">
       尚有{{toBeDeliveredOrderCounts}}个订单待发货
-      <div class="board-card-button" routerLink="/delivery/neworder">查看订单|发货</div>
+      <div class="board-card-button" routerLink="/delivery/deliveringorderlist">查看订单|发货</div>
     </p-card>
   </div>
   <div class="ui-g-12 ui-md-6 ui-lg-3">
     <p-card title="待归档订单" styleClass="ui-card-shadow" [style]="{background: '#c1ffc1'}">
       尚有{{toBeClosedOrderCounts}}个订单待归档
-      <div class="board-card-button" routerLink="/delivery/neworder">查看订单|归档</div>
+      <div class="board-card-button" routerLink="/delivery/closingorderlist">查看订单|归档</div>
     </p-card>
   </div>
 </div>
